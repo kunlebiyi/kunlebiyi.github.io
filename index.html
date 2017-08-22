@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html style="height: 100%;" lang="en-Us" >
+<div class="body_wrapper">
+	<head>
+		<title>AdebiyiAdekunle</title>
+
+		<!-- External Stylesheet -->
+		<link rel="stylesheet" type="text/css" href="css/style.css" media="all">
+        <!-- Responsive Meta Tags -->
+		<meta name="viewport" content="width-device-width,initial-scale=1.0,minimium-scale=1.0, maximum-scale=1.0 user-scalable=no">
+        <!-- JQuery library -->
+		<script src="js/jquery.js"></script>
+		
+		<!-- jQuery library (served from Google) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<!-- bxSlider Javascript file -->
+		<script src="js/jquery.bxslider.min.js"></script>
+		<!-- bxSlider CSS file -->
+		<link href="js/jquery.bxslider.css" rel="stylesheet" />
+		<script>
+//Toggle for width display
+
+var showWidth = 1;
+if(showWidth == 1){
+	$(document).ready(function(){
+		$(window).resize(function() {
+			var width = $(window).width();
+			document.getElementById('output_width').innerHTML="Window Width:"+width.toString();
+
+		});
+	});
+}
+</script>
+
+<script type="text/javascript">
+//Call function for the Slider
+
+	$(document).ready(function(){
+
+		$('.bxslider').bxSlider({
+			auto: true,
+			autoControls: true
+		});
+		
+});
+</script>
+            <!-- HEADER -->
+<header id="header">
+	<div class="container">
+		<nav id="nav">
+			<ul>
+				<li>
+					<a href="home">Home</a>
+				</li>
+				<li>
+					<a href="about">About</a>
+				</li>
+				<li>
+					<a href="contact">Contact</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+</header>
+</head>
+<body style="position: relative; min-height: 100%; top:0px">
+         
+         <!-- SECTIONS -->
+
+   <div class="name">
+		<h1 style="font-style: oblique; font-variant: all-petite-caps; font size: 80px; font-weight: 400px;" align = "center">I'm Biyi</h1>
+		<em><p  style="font-style: italic; font-size:25px;" align = "center">a web designer</p></em>
+	</div>
+       <!-- Slider Image List-->
+	<ul class="bxslider">
+		<li><img src="images/B.jpg" /></li>
+		<li><img src="images/B2.jpg" /></li>
+		<li><img src="images/B3.jpg" /></li>
+		<li><img src="images/B4.jpg" /></li>
+		<li><img src="images/B5.jpg" /></li>
+		<li><img src="images/B6.jpg" /></li>
+		<li><img src="images/B7.jpg" /></li>
+
+	</ul>
+           <!-- CONTENT -->
+	<div class="left-col">
+		<h2 style="color: green; font-size: 25px; font-weight: 20px;">Hi.</h2>
+		<p style="font-size: 20px; font-family: Serif; font-style:normal; font-weight: 25px;">I'm a web designer / developer based in Ibadan Nigeria.</br> I have a passion for web design and love to </br> create for web and mobile devices.</p>
+	</div>
+	<div class="left-col">
+		<h1 style="color:green; font-style: normal;">What I can do.</h1>
+		<p style="font-size: 30px; font-family: fantasy; font-style: normal;">Design What you want</p>
+		<p style="font-size: 20px; font-family: Serif; font-style:normal; font-weight: 25px;">I like to keep it simple. My goals are to focus on typography,content</br>and conveying the message that you want to send.</p>
+	</div>
+	<div class="left-col">
+		<h2 style="color: green; font-size: 30px; font-weight: 20px;">Develop what you need.</h2>
+		<p style="font-size: 20px; font-family: Serif; font-style:normal; font-weight: 25px;">I'm a developer, so I know how to create your website to run across devices using the latest technologies available.</p>
+	</div>
+	
+</div>
+</body>
+ 
+      <!-- FOOTER -->
+
+<footer class="footer">
+	<p>Copyright 2017 Adebiyi</p>
+</footer>
+</div>
+</html>
